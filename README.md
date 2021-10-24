@@ -150,7 +150,7 @@ WorldCountriesConfiguration.ThrowIfNameNotFoundForALanguage = false;
 for the function `GetName(string languageCode)` it same as the previous one, the only difference is that the type of the returned name (common or official) will be detrmined from `WorldCountriesConfiguration` configuration class
 
 ```csharp
-// if set to `true` we will return the official name of the country when retrieving the name, 
+// if set to `true` we will return the official name of the country when retrieving the name,
 // if set to `false` the common name will be used, by default is set to `true`
 WorldCountriesConfiguration.UserOfficialNameWhenRetrievingCountryName = true;
 ```
@@ -206,6 +206,33 @@ KeyValuePair<string, string> countries = service.GetAsKeyValue();
 ```
 
 you can find the list of all supported countries [here](https://github.com/YoussefSell/Countries.Net/blob/master/Countries.md).
+
+-3 using it with DI for ASP core
+
+if you want to use `the CountriesService` With DI you can register the service with the interface `ICountriesService`
+
+```csharp
+serviceCollection.AddSingleton<ICountriesService, CountriesService>();
+```
+
+or you can install the `Countries.Net.DependencyInjection`,
+
+- package on [NuGet](https://www.nuget.org/packages/Countries.Net.DependencyInjection), or with package manager `Install-Package Countries.Net.DependencyInjection`.
+
+than you simple add this line to your DI
+
+```csharp
+serviceCollection.AddCountries();
+
+// to access WorldCountriesConfiguration configuration
+serviceCollection.AddCountries(config => {
+  config.DefaultLanguage = "eng";
+  config.IgnoreCaseOnNameEqualityCheck = true;
+  config.ThrowIfNameNotFoundForALanguage = true;
+  config.UseCurrentCultureInfoForCountryName = false;
+  config.UserOfficialNameWhenRetrievingCountryName = true;
+});
+```
 
 ## Credits
 

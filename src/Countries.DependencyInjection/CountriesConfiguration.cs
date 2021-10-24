@@ -1,7 +1,7 @@
 ﻿namespace Microsoft.Extensions.DependencyInjection
 {
-using Countries;
-    using System;
+    using Countries;
+    using Countries.Domain.Exceptions;
 
     /// <summary>
     /// the DI registration configuration
@@ -24,7 +24,7 @@ using Countries;
         public bool UserOfficialNameWhenRetrievingCountryName { get; set; } = true;
 
         /// <summary>
-        /// if true an exception of type <see cref="Domain.Exceptions.TranslationNotFoundExceptionsException"/> will be thrown, if false null will be returned
+        /// if true an exception of type <see cref="TranslationNotFoundExceptionsException"/> will be thrown, if false null will be returned
         /// </summary>
         public bool ThrowIfNameNotFoundForALanguage { get; set; } = true;
 
