@@ -1,6 +1,5 @@
 ﻿namespace Countries
 {
-    using Data;
     using Domain.Entities;
     using Domain.Enums;
     using Domain.Exceptions;
