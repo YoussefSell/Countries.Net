@@ -11,7 +11,7 @@
         {
             // arrange
             var service = new CountriesService();
-            var expectedCount = 250;
+            var expectedCount = 249;
 
             // act
             var all = service.GetAll();
@@ -112,7 +112,7 @@
         }
 
         [Theory]
-        [InlineData(Region.Africa, 59)]
+        [InlineData(Region.Africa, 58)]
         [InlineData(Region.Americas, 56)]
         [InlineData(Region.Antarctic, 5)]
         [InlineData(Region.Asia, 50)]
