@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.Loader", "Countri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.Test", "Countries.Test\Countries.Test.csproj", "{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.DependencyInjection", "Countries.DependencyInjection\Countries.DependencyInjection.csproj", "{D798E772-1063-48F4-84CA-8071129F0891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D798E772-1063-48F4-84CA-8071129F0891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D798E772-1063-48F4-84CA-8071129F0891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D798E772-1063-48F4-84CA-8071129F0891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D798E772-1063-48F4-84CA-8071129F0891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
