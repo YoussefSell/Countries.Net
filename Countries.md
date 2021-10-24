@@ -1,0 +1,252 @@
+list of supported countries:
+
+- Åland Islands
+- American Samoa
+- Anguilla
+- Antarctica
+- Antigua and Barbuda
+- Arab Republic of Egypt
+- Argentine Republic
+- Aruba
+- Bailiwick of Guernsey
+- Bailiwick of Jersey
+- Barbados
+- Belize
+- Bermuda
+- Bolivarian Republic of Venezuela
+- Bonaire, Sint Eustatius and Saba
+- Bosnia and Herzegovina
+- Bouvet Island
+- British Indian Ocean Territory
+- Burkina Faso
+- Canada
+- Cayman Islands
+- Central African Republic
+- Collectivity of Saint Barthélemy
+- Commonwealth of Australia
+- Commonwealth of Dominica
+- Commonwealth of Puerto Rico
+- Commonwealth of the Bahamas
+- Commonwealth of the Northern Mariana Islands
+- Cook Islands
+- Co-operative Republic of Guyana
+- Country of Curaçao
+- Czech Republic
+- Democratic People's Republic of Korea
+- Democratic Republic of São Tomé and Príncipe
+- Democratic Republic of the Congo
+- Democratic Republic of Timor-Leste
+- Democratic Socialist Republic of Sri Lanka
+- Department of Mayotte
+- Dominican Republic
+- Falkland Islands
+- Faroe Islands
+- Federal Democratic Republic of Ethiopia
+- Federal Democratic Republic of Nepal
+- Federal Republic of Germany
+- Federal Republic of Nigeria
+- Federal Republic of Somalia
+- Federated States of Micronesia
+- Federation of Saint Christopher and Nevis
+- Federative Republic of Brazil
+- French Polynesia
+- French Republic
+- Gabonese Republic
+- Georgia
+- Gibraltar
+- Grand Duchy of Luxembourg
+- Greenland
+- Grenada
+- Guadeloupe
+- Guam
+- Guiana
+- Hashemite Kingdom of Jordan
+- Heard Island and McDonald Islands
+- Hellenic Republic
+- Hong Kong Special Administrative Region of the People's Republic of China
+- Hungary
+- Iceland
+- Independent and Sovereign Republic of Kiribati
+- Independent State of Papua New Guinea
+- Independent State of Samoa
+- Islamic Republic of Afghanistan
+- Islamic Republic of Iran
+- Islamic Republic of Mauritania
+- Islamic Republic of Pakistan
+- Isle of Man
+- Italian Republic
+- Jamaica
+- Japan
+- Kingdom of Bahrain
+- Kingdom of Belgium
+- Kingdom of Bhutan
+- Kingdom of Cambodia
+- Kingdom of Denmark
+- Kingdom of Eswatini
+- Kingdom of Lesotho
+- Kingdom of Morocco
+- Kingdom of Norway
+- Kingdom of Saudi Arabia
+- Kingdom of Spain
+- Kingdom of Sweden
+- Kingdom of Thailand
+- Kingdom of the Netherlands
+- Kingdom of Tonga
+- Kyrgyz Republic
+- Lao People's Democratic Republic
+- Lebanese Republic
+- Macao Special Administrative Region of the People's Republic of China
+- Malaysia
+- Martinique
+- Mongolia
+- Montenegro
+- Montserrat
+- Nation of Brunei, Abode of Peace
+- New Caledonia
+- New Zealand
+- Niue
+- Oriental Republic of Uruguay
+- People's Democratic Republic of Algeria
+- People's Republic of Bangladesh
+- People's Republic of China
+- Pitcairn Group of Islands
+- Plurinational State of Bolivia
+- Portuguese Republic
+- Principality of Andorra
+- Principality of Liechtenstein
+- Principality of Monaco
+- Republic of Albania
+- Republic of Angola
+- Republic of Armenia
+- Republic of Austria
+- Republic of Azerbaijan
+- Republic of Belarus
+- Republic of Benin
+- Republic of Botswana
+- Republic of Bulgaria
+- Republic of Burundi
+- Republic of Cabo Verde
+- Republic of Cameroon
+- Republic of Chad
+- Republic of Chile
+- Republic of China (Taiwan)
+- Republic of Colombia
+- Republic of Costa Rica
+- Republic of Côte d'Ivoire
+- Republic of Croatia
+- Republic of Cuba
+- Republic of Cyprus
+- Republic of Djibouti
+- Republic of Ecuador
+- Republic of El Salvador
+- Republic of Equatorial Guinea
+- Republic of Estonia
+- Republic of Fiji
+- Republic of Finland
+- Republic of Ghana
+- Republic of Guatemala
+- Republic of Guinea
+- Republic of Guinea-Bissau
+- Republic of Haiti
+- Republic of Honduras
+- Republic of India
+- Republic of Indonesia
+- Republic of Iraq
+- Republic of Ireland
+- Republic of Kazakhstan
+- Republic of Kenya
+- Republic of Korea
+- Republic of Kosovo
+- Republic of Latvia
+- Republic of Liberia
+- Republic of Lithuania
+- Republic of Madagascar
+- Republic of Malawi
+- Republic of Mali
+- Republic of Malta
+- Republic of Mauritius
+- Republic of Moldova
+- Republic of Mozambique
+- Republic of Namibia
+- Republic of Nauru
+- Republic of Nicaragua
+- Republic of Niger
+- Republic of North Macedonia
+- Republic of Palau
+- Republic of Panama
+- Republic of Paraguay
+- Republic of Peru
+- Republic of Poland
+- Republic of Rwanda
+- Republic of San Marino
+- Republic of Senegal
+- Republic of Serbia
+- Republic of Seychelles
+- Republic of Sierra Leone
+- Republic of Singapore
+- Republic of Slovenia
+- Republic of South Africa
+- Republic of South Sudan
+- Republic of Suriname
+- Republic of Tajikistan
+- Republic of the Congo
+- Republic of the Gambia
+- Republic of the Maldives
+- Republic of the Marshall Islands
+- Republic of the Philippines
+- Republic of the Sudan
+- Republic of the Union of Myanmar
+- Republic of Trinidad and Tobago
+- Republic of Turkey
+- Republic of Uganda
+- Republic of Uzbekistan
+- Republic of Vanuatu
+- Republic of Yemen
+- Republic of Zambia
+- Republic of Zimbabwe
+- Réunion Island
+- Romania
+- Russian Federation
+- Sahrawi Arab Democratic Republic
+- Saint Helena, Ascension and Tristan da Cunha
+- Saint Lucia
+- Saint Martin
+- Saint Pierre and Miquelon
+- Saint Vincent and the Grenadines
+- Sint Maarten
+- Slovak Republic
+- Socialist Republic of Vietnam
+- Solomon Islands
+- South Georgia and the South Sandwich Islands
+- State of Eritrea
+- State of Israel
+- State of Kuwait
+- State of Libya
+- State of Palestine
+- State of Qatar
+- Sultanate of Oman
+- Svalbard og Jan Mayen
+- Swiss Confederation
+- Syrian Arab Republic
+- Territory of Christmas Island
+- Territory of Norfolk Island
+- Territory of the Cocos (Keeling) Islands
+- Territory of the French Southern and Antarctic Lands
+- Territory of the Wallis and Futuna Islands
+- Togolese Republic
+- Tokelau
+- Tunisian Republic
+- Turkmenistan
+- Turks and Caicos Islands
+- Tuvalu
+- Ukraine
+- Union of the Comoros
+- United Arab Emirates
+- United Kingdom of Great Britain and Northern Ireland
+- United Mexican States
+- United Republic of Tanzania
+- United States Minor Outlying Islands
+- United States of America
+- Vatican City State
+- Virgin Islands
+- Virgin Islands of the United States
