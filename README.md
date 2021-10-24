@@ -150,7 +150,8 @@ WorldCountriesConfiguration.ThrowIfNameNotFoundForALanguage = false;
 for the function `GetName(string languageCode)` it same as the previous one, the only difference is that the type of the returned name (common or official) will be detrmined from `WorldCountriesConfiguration` configuration class
 
 ```csharp
-// if set to `true` we will return the official name of the country when retrieving the name, if set to `false` the common name will be used, by default is set to `true`
+// if set to `true` we will return the official name of the country when retrieving the name, 
+// if set to `false` the common name will be used, by default is set to `true`
 WorldCountriesConfiguration.UserOfficialNameWhenRetrievingCountryName = true;
 ```
 
@@ -204,7 +205,7 @@ var countries = service.FindByCurrency("MAD");
 KeyValuePair<string, string> countries = service.GetAsKeyValue();
 ```
 
-you can find the list of all supported countries [here](https://github.com/YoussefSell/Countries.Net/Countries.md).
+you can find the list of all supported countries [here](https://github.com/YoussefSell/Countries.Net/blob/master/Countries.md).
 
 ## Credits
 
