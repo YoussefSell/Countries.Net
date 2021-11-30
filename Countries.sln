@@ -1,15 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries", "Countries\Countries.csproj", "{463E6167-3CDE-4249-BB52-534CA0FAD178}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries", "src\Countries\Countries.csproj", "{463E6167-3CDE-4249-BB52-534CA0FAD178}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.Loader", "Countries.Loader\Countries.Loader.csproj", "{9F365D1E-FA99-4B4E-9922-567518C16501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries.Loader", "src\Countries.Loader\Countries.Loader.csproj", "{9F365D1E-FA99-4B4E-9922-567518C16501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.Test", "Countries.Test\Countries.Test.csproj", "{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries.Test", "tests\Countries.Test\Countries.Test.csproj", "{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.DependencyInjection", "Countries.DependencyInjection\Countries.DependencyInjection.csproj", "{D798E772-1063-48F4-84CA-8071129F0891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries.DependencyInjection", "src\Countries.DependencyInjection\Countries.DependencyInjection.csproj", "{D798E772-1063-48F4-84CA-8071129F0891}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AC54446-D16D-4D0B-A7B5-F96941D29D29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D7F7782C-6792-4565-808C-CB2CCC65C325}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0B5D278-119A-4983-AC5B-73BF45127BB8}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		Countries.md = Countries.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +47,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{463E6167-3CDE-4249-BB52-534CA0FAD178} = {0AC54446-D16D-4D0B-A7B5-F96941D29D29}
+		{9F365D1E-FA99-4B4E-9922-567518C16501} = {0AC54446-D16D-4D0B-A7B5-F96941D29D29}
+		{F213F8DC-6FC7-4C5A-9B1A-E94B5E8B86BC} = {D7F7782C-6792-4565-808C-CB2CCC65C325}
+		{D798E772-1063-48F4-84CA-8071129F0891} = {0AC54446-D16D-4D0B-A7B5-F96941D29D29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D164FE0F-6F41-463C-9330-F27535934E98}

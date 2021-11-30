@@ -26,8 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Countries.Net" Version="1.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.20" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Countries\Countries.csproj" />
   </ItemGroup>
 
 </Project>
