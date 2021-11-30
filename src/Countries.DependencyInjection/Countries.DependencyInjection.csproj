@@ -2,35 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Countries.Net.DependencyInjection</PackageId>
+  </PropertyGroup>
 
-    <Version>1.0.0</Version>
+  <PropertyGroup>
     <Title>Countries.Net.DependencyInjection</Title>
-    <Authors>Youssef Sellami</Authors>
+    <PackageId>Countries.Net.DependencyInjection</PackageId>
     <Description>Get the access to the countries dataset with no dependencies and no API calls.</Description>
-    <PackageTags>Countries.Net; Countries database; Countries data; Countries list</PackageTags>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/YoussefSell/Countries.Net</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/YoussefSell/Countries.Net</PackageProjectUrl>
-    <PackageReleaseNotes>https://github.com/YoussefSell/Countries.Net/releases</PackageReleaseNotes>
-    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\assets\logo.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <ProjectReference Include="..\Countries\Countries.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Countries\Countries.csproj" />
   </ItemGroup>
 
 </Project>

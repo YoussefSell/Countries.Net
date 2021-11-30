@@ -12,6 +12,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries.DependencyInjection", "src\Countries.DependencyInjection\Countries.DependencyInjection.csproj", "{D798E772-1063-48F4-84CA-8071129F0891}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AC54446-D16D-4D0B-A7B5-F96941D29D29}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D7F7782C-6792-4565-808C-CB2CCC65C325}"
 EndProject
