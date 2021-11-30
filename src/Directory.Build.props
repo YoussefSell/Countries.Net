@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Product>Email.Net</Product>
+    <Product>Countries.Net</Product>
     <Authors>Youssef Sellami</Authors>
     <Copyright>Copyright &#169; 2021 YoussefSell.</Copyright>
     <PackageTags>Countries.Net; Countries database; Countries data; Countries list</PackageTags>
