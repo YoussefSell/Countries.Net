@@ -1,7 +1,8 @@
-﻿namespace Countries.Test
+﻿namespace Countries.NET.Test
 {
     using System.Linq;
-    using Countries.Domain.Enums;
+    using Countries.NET;
+    using Countries.NET.Enums;
     using Xunit;
 
     public class CountriesServiceShould

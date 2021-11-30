@@ -1,4 +1,4 @@
-﻿namespace Countries.Domain.Entities
+﻿namespace Countries.NET
 {
     using System;
 

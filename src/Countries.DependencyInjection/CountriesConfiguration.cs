@@ -1,7 +1,7 @@
 ﻿namespace Microsoft.Extensions.DependencyInjection
 {
-    using Countries;
-    using Countries.Domain.Exceptions;
+    using Countries.NET;
+    using Countries.NET.Exceptions;
 
     /// <summary>
     /// the DI registration configuration
