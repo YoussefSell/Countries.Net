@@ -1,11 +1,17 @@
-﻿namespace Countries.Test
+﻿namespace Countries.NET.Test
 {
     using System.Linq;
-    using Countries.Domain.Enums;
+    using Countries.NET;
+    using Countries.NET.Enums;
     using Xunit;
 
     public class CountriesServiceShould
     {
+        public CountriesServiceShould()
+        {
+            WorldCountriesConfiguration.Reset();
+        }
+
         [Fact]
         public void GetListOfAllCountries()
         {
@@ -157,7 +163,7 @@
             var countries = service.FindByCurrency(currency).ToArray();
 
             // assert
-            Assert.Equal(expectedCount, countries.Count());
+            Assert.Equal(expectedCount, countries.Length);
         }
     }
 }

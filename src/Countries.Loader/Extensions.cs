@@ -1,4 +1,4 @@
-﻿namespace Countries.Loader
+﻿namespace Countries.NET.Loader
 {
     using System;
     using System.Collections.Generic;

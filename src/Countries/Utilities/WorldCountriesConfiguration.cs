@@ -1,4 +1,4 @@
-﻿namespace Countries
+﻿namespace Countries.NET
 {
     /// <summary>
     /// the configuration of the WorldCountries services
@@ -21,7 +21,7 @@
         public static bool UserOfficialNameWhenRetrievingCountryName = true;
 
         /// <summary>
-        /// if true an exception of type <see cref="Domain.Exceptions.TranslationNotFoundExceptionsException"/> will be thrown, if false null will be returned
+        /// if true an exception of type <see cref="Exceptions.TranslationNotFoundExceptionsException"/> will be thrown, if false null will be returned
         /// </summary>
         public static bool ThrowIfNameNotFoundForALanguage = true;
 

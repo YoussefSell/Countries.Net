@@ -1,4 +1,4 @@
-﻿namespace Countries.Domain.Exceptions
+﻿namespace Countries.NET.Exceptions
 {
     using System;
 

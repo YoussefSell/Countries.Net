@@ -1,8 +1,8 @@
-namespace Countries.Data
+namespace Countries.NET.Database
 {
     using System.Collections.Generic;
-    using Domain.Entities;
-    using Domain.Enums;
+    
+    using Countries.NET.Enums;
 
     /// <summary>
     /// create an instance of SaintHelena,AscensionandTristandaCunha country

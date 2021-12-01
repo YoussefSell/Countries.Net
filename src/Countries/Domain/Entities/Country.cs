@@ -1,6 +1,6 @@
-﻿namespace Countries.Domain.Entities
+﻿namespace Countries.NET
 {
-    using Data;
+    using Database;
     using Enums;
     using System;
     using System.Collections.Generic;
