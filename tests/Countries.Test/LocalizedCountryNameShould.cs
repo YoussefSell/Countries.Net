@@ -147,7 +147,7 @@ namespace Countries.NET.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             var country = Database.Morocco.Instance;
-            string language = null;
+            string? language = null;
 
             // assert
             Assert.Throws<ArgumentNullException>(() =>
