@@ -1,4 +1,4 @@
-﻿namespace Countries.Domain.Enums
+﻿namespace Countries.NET.Enums
 {
     /// <summary>
     /// the regions enum

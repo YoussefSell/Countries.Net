@@ -1,8 +1,7 @@
-﻿namespace Countries
+﻿namespace Countries.NET
 {
-    using Domain.Entities;
-    using Domain.Enums;
-    using Domain.Exceptions;
+    using Enums;
+    using Exceptions;
     using System.Collections.Generic;
     using System.Linq;
 

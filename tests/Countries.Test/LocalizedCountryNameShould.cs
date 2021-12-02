@@ -1,6 +1,7 @@
-namespace Countries.Test
+namespace Countries.NET.Test
 {
-    using Countries.Domain.Exceptions;
+    using Countries.NET;
+    using Countries.NET.Exceptions;
     using System;
     using System.Globalization;
     using Xunit;
@@ -12,7 +13,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "fra";
             var expectedName = "Royaume du Maroc";
 
@@ -29,7 +30,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.DefaultLanguage = "fra";
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var expectedName = "Royaume du Maroc";
 
             // act
@@ -45,7 +46,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.UseCurrentCultureInfoForCountryName = true;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var expectedName = "Royaume du Maroc";
             CultureInfo.CurrentCulture = new CultureInfo("fr");
 
@@ -62,7 +63,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.UserOfficialNameWhenRetrievingCountryName = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "fra";
             var expectedName = "Maroc";
 
@@ -80,7 +81,7 @@ namespace Countries.Test
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.DefaultLanguage = "fra";
             WorldCountriesConfiguration.UserOfficialNameWhenRetrievingCountryName = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var expectedName = "Maroc";
 
             // act
@@ -97,7 +98,7 @@ namespace Countries.Test
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.UseCurrentCultureInfoForCountryName = true;
             WorldCountriesConfiguration.UserOfficialNameWhenRetrievingCountryName = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var expectedName = "Maroc";
             CultureInfo.CurrentCulture = new CultureInfo("fr");
 
@@ -114,7 +115,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.ThrowIfNameNotFoundForALanguage = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "aaa"; // not exist
 
             // act
@@ -129,7 +130,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "aaa"; // not exist
 
             // assert
@@ -145,8 +146,8 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
-            string language = null;
+            var country = Database.Morocco.Instance;
+            string? language = null;
 
             // assert
             Assert.Throws<ArgumentNullException>(() =>
@@ -161,7 +162,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             string language = "";
 
             // assert
@@ -177,7 +178,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             string language = "ee";
 
             // assert
@@ -193,7 +194,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "fra";
             var nameToCheck = "Maroc";
 
@@ -210,7 +211,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.IgnoreCaseOnNameEqualityCheck = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var language = "fra";
             var nameToCheck = "maroc";
 
@@ -226,7 +227,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var nameToCheck = "Maroc";
 
             // act
@@ -242,7 +243,7 @@ namespace Countries.Test
             // arrange
             WorldCountriesConfiguration.Reset();
             WorldCountriesConfiguration.IgnoreCaseOnNameEqualityCheck = false;
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var nameToCheck = "maroc";
 
             // act
@@ -258,7 +259,7 @@ namespace Countries.Test
         {
             // arrange
             WorldCountriesConfiguration.Reset();
-            var country = Data.Morocco.Instance;
+            var country = Database.Morocco.Instance;
             var nameToCheck = "maroc1"; // not exist
 
             // act

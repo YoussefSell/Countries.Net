@@ -1,4 +1,4 @@
-﻿namespace Countries.Loader
+﻿namespace Countries.NET.Loader
 {
     public static class CountryClassTemplate
     {
@@ -7,8 +7,7 @@
             return @$"namespace Countries.Data
 {{
     using System.Collections.Generic;
-    using Domain.Entities;
-    using Domain.Enums;
+    using Countries.NET.Enums;
 
     /// <summary>
     /// create an instance of {name} country
@@ -30,7 +29,7 @@
             flag: ""{country.Flag}"",
             region: Region.{country.Region},
             subregion: ""{country.Subregion}"",
-            independent: {country.Independent.ToString().ToLower()},
+            independent: {(country.Independent ?? false).ToString().ToLower()},
             status: ""{country.Status}"",
             unMember: {country.UnMember.ToString().ToLower()},
             landlocked: {country.Landlocked.ToString().ToLower()},

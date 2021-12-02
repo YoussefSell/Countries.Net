@@ -1,6 +1,6 @@
 ﻿namespace Microsoft.Extensions.DependencyInjection
 {
-    using Countries;
+    using Countries.NET;
     using System;
 
     /// <summary>

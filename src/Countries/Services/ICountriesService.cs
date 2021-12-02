@@ -1,7 +1,7 @@
-﻿namespace Countries
+﻿namespace Countries.NET
 {
-    using Domain.Entities;
-    using Domain.Enums;
+    
+    using Countries.NET.Enums;
     using System.Collections.Generic;
 
     /// <summary>
