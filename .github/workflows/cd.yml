@@ -19,19 +19,12 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
-      - name: Publish Countries.Net
-        uses: brandedoutcast/publish-nuget@v2.5.2
-        with:
-          PROJECT_FILE_PATH: src/Countries/Countries.csproj
-          VERSION_FILE_PATH: src/Directory.Build.props
-          NUGET_KEY: ${{secrets.NUGET_KEY}}
-          NUGET_SOURCE: https://api.nuget.org
-          INCLUDE_SYMBOLS: true
-      - name: Publish Countries.DependencyInjection
-        uses: brandedoutcast/publish-nuget@v2.5.2
-        with:
-          PROJECT_FILE_PATH: src/Countries.DependencyInjection/Countries.DependencyInjection.csproj
-          VERSION_FILE_PATH: src/Directory.Build.props
-          NUGET_KEY: ${{secrets.NUGET_KEY}}
-          NUGET_SOURCE: https://api.nuget.org
-          INCLUDE_SYMBOLS: true
+      - name: Pack Countries.Net
+        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries/Countries.csproj -o .
+      - name: Push Countries.Net
+        run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+      - name: Pack Countries.DependencyInjection
+        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.DependencyInjection/Countries.DependencyInjection.csproj -o .
+      - name: Push Countries.Net
+        run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
