@@ -21,10 +21,7 @@ jobs:
 
       - name: Pack Countries.Net
         run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries/Countries.csproj -o .
-      - name: Push Countries.Net
-        run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
-
       - name: Pack Countries.DependencyInjection
         run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.DependencyInjection/Countries.DependencyInjection.csproj -o .
-      - name: Push Countries.Net
+      - name: Push packages
         run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
