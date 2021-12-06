@@ -25,3 +25,10 @@ jobs:
         run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.DependencyInjection/Countries.DependencyInjection.csproj -o .
       - name: Push packages
         run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+        - name: Upload assets to release
+        run: |
+          chmod +x ./publish-assets.sh
+          ./publish-assets.sh ${{ github.event.release.tag_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
