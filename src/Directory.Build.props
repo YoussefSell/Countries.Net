@@ -1,7 +1,7 @@
 <Project>
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
@@ -9,10 +9,10 @@
     <Product>Countries.Net</Product>
     <Authors>Youssef Sellami</Authors>
     <Copyright>Copyright &#169; 2021 YoussefSell.</Copyright>
-    <PackageTags>Countries.Net; Countries database; Countries data; Countries list</PackageTags>
+    <PackageTags>Countries.Net; Countries database; Countries data; Countries list; Countries</PackageTags>
     <PackageIcon>logo.png</PackageIcon>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/YoussefSell/Countries.Net</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/YoussefSell/Countries.Net/releases</PackageReleaseNotes>
   </PropertyGroup>
