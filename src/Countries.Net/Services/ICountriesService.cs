@@ -14,6 +14,7 @@
         /// </summary>
         /// <param name="code">the code of the country to look for</param>
         /// <returns>the country or null if not found</returns>
+        /// <remarks>the code is case sensitive, MA != ma</remarks>
         Country FindByCode(string code);
 
         /// <summary>
