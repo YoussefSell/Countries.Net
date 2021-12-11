@@ -240,7 +240,7 @@ serviceCollection.AddCountries(config => {
 
 ## Samples
 
-here are some samples of how you can integrate Email.Net with different app types:
+here are some samples of how you can integrate Countries.Net with different app types:
 
 - [Console app](https://github.com/YoussefSell/Countries.Net/tree/master/samples/Countries.Net.Samples.Console)
 - [ASP Core app](https://github.com/YoussefSell/Countries.Net/tree/master/samples/Countries.Net.Samples.AspCore)
