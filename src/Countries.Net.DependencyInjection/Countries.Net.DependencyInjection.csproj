@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Countries\Countries.csproj" />
+    <ProjectReference Include="..\Countries.Net\Countries.Net.csproj" />
   </ItemGroup>
 
   <ItemGroup>

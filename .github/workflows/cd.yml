@@ -20,9 +20,10 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Pack Countries.Net
-        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries/Countries.csproj -o .
-      - name: Pack Countries.DependencyInjection
-        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.DependencyInjection/Countries.DependencyInjection.csproj -o .
+        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.Net/Countries.Net.csproj -o .
+      - name: Pack Countries.Net.DependencyInjection
+        run: dotnet pack --include-symbols -p:SymbolPackageFormat=snupkg --no-build -c Release src/Countries.Net.DependencyInjection/Countries.Net.DependencyInjection.csproj -o .
+
       - name: Push packages
         run: dotnet nuget push *.nupkg --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json --skip-duplicate
 
