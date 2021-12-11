@@ -1,5 +1,9 @@
 # Countries.Net
 
+[![](https://img.shields.io/github/license/YoussefSell/Countries.Net)](https://github.com/YoussefSell/Countries.Net/blob/master/LICENSE)
+[![](https://img.shields.io/nuget/v/Countries.Net)](https://www.nuget.org/packages/Countries.Net/)
+![Build](https://github.com/YoussefSell/Countries.Net/actions/workflows/ci.yml/badge.svg)
+
 Get access to in-memory database of countries with an easy to use api and zero dependencies.
 
 ## Quick setup
@@ -117,20 +121,20 @@ to get the name of the county you can do an implicit conversion to string with:
 
 ```csharp
 // get the morocco country instance.
-var morocco = Countries.Data.Morocco.Instance;
+var morocco = Countries.NET.Database.Morocco.Instance;
 
 // the name prop is LocalizedCountryName object,
 // but you can use the implicit conversion to get the name value.
 string name = morocco.Name;
 ```
 
-the name of the country is collection of translation of the common and official name, wrapped in a object type `LocalizedCountryName` this object type exposes 3 functions `GetName()`, `GetName(string languageCode)` & `GetName(string languageCode, bool useOfficialName)`
+the name of the country is a collection of translations for the common and official name, wrapped in a object type `LocalizedCountryName` this object type exposes 3 functions `GetName()`, `GetName(string languageCode)` & `GetName(string languageCode, bool useOfficialName)`
 
 starting with `GetName(string languageCode, bool useOfficialName)` :
 
 ```csharp
 // get the morocco country instance.
-var morocco = Countries.Data.Morocco.Instance;
+var morocco = Countries.NET.Database.Morocco.Instance;
 
 // get the official name of the country in the given language,
 // this example with get the French official name of the country
@@ -177,11 +181,11 @@ public static implicit operator string(LocalizedCountryName names) => names.GetN
 
 -2 working the countries data:
 
-all countries are located in the `Data` namespace, and you can interact with it using the `CountriesService`.
+all countries are located in the `Database` namespace, and you can interact with it using the `CountriesService`.
 
 ```csharp
 // init the service
-var service = new CountriesService();
+var service = new Countries.NET.CountriesService();
 
 // to get the list of all countries:
 var countries = service.GetAll();
