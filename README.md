@@ -1,5 +1,9 @@
 # Countries.Net
 
+[![](https://img.shields.io/github/license/YoussefSell/Countries.Net)](https://github.com/YoussefSell/Countries.Net/blob/master/LICENSE)
+[![](https://img.shields.io/nuget/v/Countries.Net)](https://www.nuget.org/packages/Countries.Net/)
+![Build](https://github.com/YoussefSell/Countries.Net/actions/workflows/ci.yml/badge.svg)
+
 Get access to in-memory database of countries with an easy to use api and zero dependencies.
 
 ## Quick setup
