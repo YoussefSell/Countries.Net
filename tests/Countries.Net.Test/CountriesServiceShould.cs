@@ -179,5 +179,33 @@
             // assert
             Assert.Equal(expectedCount, countries.Length);
         }
+
+        [Fact]
+        public void ExcludeCountriesByCCA2_Code()
+        {
+            // arrange
+            var service = new CountriesService();
+            var expectedCount = service.GetAll().Count() - 1;
+
+            // act
+            var countries = service.GetAll().Exclude(Database.Morocco.Instance.CCA2);
+
+            // assert
+            Assert.Equal(expectedCount, countries.Count());
+        }
+
+        [Fact]
+        public void ExcludeCountriesByInstance()
+        {
+            // arrange
+            var service = new CountriesService();
+            var expectedCount = service.GetAll().Count() - 1;
+
+            // act
+            var countries = service.GetAll().Exclude(Database.Morocco.Instance);
+
+            // assert
+            Assert.Equal(expectedCount, countries.Count());
+        }
     }
 }
