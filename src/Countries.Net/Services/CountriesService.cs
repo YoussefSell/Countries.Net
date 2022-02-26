@@ -2,6 +2,7 @@
 {
     using Enums;
     using Exceptions;
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -12,6 +13,10 @@
     {
         /// <inheritdoc/>
         public IEnumerable<Country> GetAll() => Country.ALL;
+
+        /// <inheritdoc/>
+        public IEnumerable<TResult> GetAll<TResult>(Func<Country, TResult> selector) 
+            => GetAll().Select(selector);
 
         /// <inheritdoc/>
         public Country FindByCode(string code)
@@ -66,11 +71,11 @@
 
         /// <inheritdoc/>
         public IEnumerable<KeyValuePair<string, string>> GetAsKeyValue()
-            => GetAll().Select(country => new KeyValuePair<string, string>(key: country.CCA2, value: country.Name));
+            => GetAll(country => new KeyValuePair<string, string>(key: country.CCA2, value: country.Name));
 
         /// <inheritdoc/>
         public IEnumerable<KeyValuePair<string, string>> GetAsKeyValue(string languageCode, bool useCommonName = true)
-            => GetAll().Select(country =>
+            => GetAll(country =>
             {
                 // get the name for the given language
                 if (country.Name.TryGetValue(languageCode.ToLower(), out CountryName name))

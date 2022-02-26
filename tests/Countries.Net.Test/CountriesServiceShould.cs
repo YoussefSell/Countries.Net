@@ -26,6 +26,20 @@
             Assert.Equal(expectedCount, all.Count());
         }
 
+        [Fact]
+        public void GetListOfAllCountries_WithProjection()
+        {
+            // arrange
+            var service = new CountriesService();
+            var expectedCount = 249;
+
+            // act
+            var all = service.GetAll(country => country.CCA2);
+
+            // assert
+            Assert.Equal(expectedCount, all.Count());
+        }
+
         [Theory]
         [InlineData("MA", "Kingdom of Morocco")]
         [InlineData("MAR", "Kingdom of Morocco")]

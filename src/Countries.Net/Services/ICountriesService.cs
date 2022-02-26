@@ -1,7 +1,7 @@
 ﻿namespace Countries.NET
 {
-    
     using Countries.NET.Enums;
+    using System;
     using System.Collections.Generic;
 
     /// <summary>
@@ -72,6 +72,14 @@
         /// </summary>
         /// <returns>list of all countries</returns>
         IEnumerable<Country> GetAll();
+
+        /// <summary>
+        /// get the list of all countries. projected to a new form invoking the given transform function.
+        /// </summary>
+        /// <returns>
+        /// An System.Collections.Generic.IEnumerable`1 whose elements are the result of invoking the transform function on each element of source.
+        /// </returns>
+        IEnumerable<TResult> GetAll<TResult>(Func<Country, TResult> selector);
 
         /// <summary>
         /// get the list of countries as key-value, where the key is <see cref="Country.CCA2"/> and the value is the name.
